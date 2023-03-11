@@ -207,7 +207,7 @@ if ($row_ct_2 > 0)
 
 else
 {
-    readfile("pagenotfound.html");
+    readfile("https://github.com/BW4YNE/csci440pricechecker/blob/main/pagenotfound.html");
     exit;
 }
 echo "<br>";
