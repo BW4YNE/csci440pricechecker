@@ -194,10 +194,10 @@ if ($row_ct_2 > 0)
     while($row = $result_2->fetch_assoc())
         echo "<tr> 
               <td>".$row["id"]."</td> 
-              <td>".$row[price]."</td> 
-              <td>".$row[rating]."</td>
-              <td>".$row[description]."</td> 
-              <td><a target = '_blank' href=".$row[url].">Click here to view product</a></td>      
+              <td>".$row["price"]."</td> 
+              <td>".$row["rating"]."</td>
+              <td>".$row["description"]."</td> 
+              <td><a target = '_blank' href=".$row["url"].">Click here to view product</a></td>      
           </tr>";
         echo "</table>";
     echo "</div>";
