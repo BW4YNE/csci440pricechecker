@@ -207,7 +207,7 @@ if ($row_ct_2 > 0)
 
 else
 {
-	readfile('https://csci440pricechecker.vercel.app/pagenotfound.html');
+	readfile('errorpage/pagenotfound.html');
     exit;
 }
 echo "<br>";
