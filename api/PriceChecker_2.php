@@ -207,7 +207,8 @@ if ($row_ct_2 > 0)
 
 else
 {
-	readfile('https://csci440pricechecker.vercel.app/pagenotfound.html');
+	Redirect 301 api/PriceChecker_2.php http://csci440pricechecker.vercel.app/pagenotfound.html
+	#readfile('https://csci440pricechecker.vercel.app/pagenotfound.html');
     exit;
 }
 echo "<br>";
