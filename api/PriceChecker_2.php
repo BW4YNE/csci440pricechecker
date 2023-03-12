@@ -158,7 +158,6 @@ $Search_Term2 = str_replace(" ", "", $Search_Term);
 
 if (!$Search_Term){
     echo "Search term not found, please try again.";
-    
     exit;
 }
 
@@ -176,14 +175,18 @@ if (!$db)
 
 $result_1 = $db->query("use blah");
 
-error_reporting( E_ERROR );
-function handleError()
+if (function_exists('$db->query("select * from ".$Search_Term2."")')) 
 {
-	echo "Did not find anything in database";
+    echo "Found something in the databse in the database.<br />\n";
+} 
+else
+{
+    echo "Found nothing in the database";
 }
+
 	
-$result_2 = $db->query("select * from ".$Search_Term2.""); #<---Throws an error here and doesn't proceed with the code after
-$row_ct_2 = $result_2->num_rows; 
+#$result_2 = $db->query("select * from ".$Search_Term2.""); #<---Throws an error here and doesn't proceed with the code after
+#$row_ct_2 = $result_2->num_rows; 
 	
 	
 
