@@ -205,7 +205,7 @@ if ($row_ct_2 > 0)
 
 }
 
-else
+if ($row_ct_2 = 0)
 {
 	echo "This redirection is not working";
 	readfile('https://csci440pricechecker.vercel.app/errorpage/pagenotfound.html');
