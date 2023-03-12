@@ -207,7 +207,7 @@ if ($row_ct_2 > 0)
 
 else
 {
-    <script type="text/javascript"> window.location.rel="noopener" target="_blank" href = 'https://csci440pricechecker.vercel.app/pagenotfound.html'; </script>
+    <script type="text/javascript"> target="_blank" window.location.href = 'https://csci440pricechecker.vercel.app/pagenotfound.html'; </script>
 	#readfile("https://csci440pricechecker.vercel.app/pagenotfound.html");
     exit;
 }
