@@ -175,15 +175,15 @@ if (!$db)
 }
 
 $result_1 = $db->query("use blah");
-if ($result_2 = $db->query("select * from ".$Search_Term2.""))
+if (!$result_2 = $db->query("select * from ".$Search_Term2.""))
 {
-	$row_ct_2 = $result_2->num_rows; 
+	echo "This redirection is not working";
+	exit;
 }
 else
 {
-	echo "This redirection is not working";
+	$row_ct_2 = $result_2->num_rows; 
 	#readfile('https://csci440pricechecker.vercel.app/errorpage/pagenotfound.html');
-    	exit;
 }
 	
 	
