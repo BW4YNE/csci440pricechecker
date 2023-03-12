@@ -177,6 +177,14 @@ if (!$db)
 $result_1 = $db->query("use blah");
 $result_2 = $db->query("select * from ".$Search_Term2."");
 $row_ct_2 = $result_2->num_rows; 
+	
+	
+if ($row_ct_2 = 0)
+{
+	echo "This redirection is not working";
+	#readfile('https://csci440pricechecker.vercel.app/errorpage/pagenotfound.html');
+    	exit;
+}
 
 if ($row_ct_2 > 0)
 {
@@ -205,13 +213,13 @@ if ($row_ct_2 > 0)
 
 }
 
-if ($row_ct_2 = 0)
-{
-	echo "This redirection is not working";
-	readfile('https://csci440pricechecker.vercel.app/errorpage/pagenotfound.html');
-    exit;
-}
-echo "<br>";
+#if ($row_ct_2 = 0)
+#{
+	#echo "This redirection is not working";
+	#readfile('https://csci440pricechecker.vercel.app/errorpage/pagenotfound.html');
+   # exit;
+#}
+#echo "<br>";
 
 
  
