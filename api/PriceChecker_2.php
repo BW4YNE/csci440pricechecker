@@ -174,17 +174,12 @@ if (!$db)
 }
 
 $result_1 = $db->query("use blah");
-
-if (function_exists($db->query("select * from ".$Search_Term2.""))) 
+try 
 {
-    echo "Found something in the databse in the database.<br />\n";
-} 
-else
-{
-    echo "Found nothing in the database";
+    $result_2 = $db->query("select * from ".$Search_Term2."");
+} catch (\Error $ex) { // Error is the base class for all internal PHP error exceptions.
+    var_dump($ex);
 }
-
-	
 #$result_2 = $db->query("select * from ".$Search_Term2.""); #<---Throws an error here and doesn't proceed with the code after
 #$row_ct_2 = $result_2->num_rows; 
 	
