@@ -175,7 +175,7 @@ if (!$db)
 
 $result_1 = $db->query("use blah");
 
-if (function_exists('$db->query("select * from ".$Search_Term2."")')) 
+if (function_exists($db->query("select * from ".$Search_Term2.""))) 
 {
     echo "Found something in the databse in the database.<br />\n";
 } 
