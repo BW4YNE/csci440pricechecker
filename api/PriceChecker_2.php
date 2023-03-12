@@ -181,7 +181,7 @@ $row_ct_2 = $result_2->num_rows;
 if ($row_ct_2 > 0)
 {
     echo "<h2>$row_ct_2 Results Found:</h2>";
-    echo "<div class='text-center'><a href='index.html'><button>Homepage</button></a></div>"; 
+    echo "<div class='text-center'><a href='https://csci440pricechecker.vercel.app/index.html'><button>Homepage</button></a></div>"; 
     echo "<div class='table-wrapper'>";
         echo "<table class='fl-table'>";
     echo "<tr>
