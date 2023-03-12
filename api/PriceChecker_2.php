@@ -193,7 +193,7 @@ if ($row_ct_2 > 0)
         </tr>";
     while($row = $result_2->fetch_assoc())
         echo "<tr> 
-              <td>".$row[id]."</td> 
+              <td>".$row["id"]."</td> 
               <td>".$row[price]."</td> 
               <td>".$row[rating]."</td>
               <td>".$row[description]."</td> 
