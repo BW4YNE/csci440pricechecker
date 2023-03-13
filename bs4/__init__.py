@@ -253,4 +253,4 @@ class StopParsing(Exception):
 if __name__ == '__main__':
     import sys
     soup = BeautifulSoup(sys.stdin)
-    print soup.prettify("utf-16")
+    print soup.prettify('utf-16')
