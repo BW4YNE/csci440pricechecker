@@ -252,5 +252,5 @@ class StopParsing(Exception):
 #By default, act as an HTML pretty-printer.
 if __name__ == '__main__':
     import sys
-    soup = BeautifulSoup(sys.stdin, 'html.parser')
+    soup = BeautifulSoup(sys.stdin)
     print(soup.prettify())
