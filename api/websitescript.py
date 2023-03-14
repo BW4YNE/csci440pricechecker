@@ -55,8 +55,6 @@ def search_for(search):
 
     file_title = search
     search = get_url(search)
-    output_f = open(file_title.replace(' ', '_') + '.csv', 'w')
-    output_f.write("Description,Price,Rating,Reviews,URL;\n")
     driver.get(search)
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     results = soup.find_all('div', {'data-component-type': 's-search-result'})
@@ -105,17 +103,12 @@ def search_for(search):
                  "{};".format(desc.replace(',', '.'), price.replace(',', '.'),
                               rating.replace(',', '.'), reviews.replace(',', '.'), url)
         print(output)
-        try:
-            output_f.write(output + '\n')
-        except Exception:
-            pass
 
         sql = f'''insert into {search_term.replace(" ","")} (price,rating,reviews,description,url) 
         values ("{price}", "{rating}", "{reviews}", "{desc}", "{url}")'''
         cursor.execute(sql)
         cursor.connection.commit()
 
-    output_f.close()
 
 
 search_term = str(input("Search term: "))
