@@ -7,7 +7,7 @@ encoding; that's the tree builder's job.
 """
 
 import codecs
-from htmlentitydefs import codepoint2name
+from html.entities import codepoint2name
 import re
 
 # Autodetects character encodings. Very useful.
