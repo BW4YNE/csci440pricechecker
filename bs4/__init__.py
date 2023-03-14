@@ -253,4 +253,4 @@ class StopParsing(Exception):
 if __name__ == '__main__':
     import sys
     soup = BeautifulSoup(sys.stdin, 'html.parser')
-    print soup.prettify()
+    print(soup.prettify())
