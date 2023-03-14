@@ -4,7 +4,7 @@ __all__ = [
     'HTMLParserTreeBuilder',
     ]
 
-from 'html.parser' import HTMLParser
+from html.parser import HTMLParser
 from HTMLParser import HTMLParser
 from bs4.element import (
     CData,
