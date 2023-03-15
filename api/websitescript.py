@@ -110,9 +110,10 @@ def search_for(search):
         cursor.connection.commit()
 
 
+#C:/Program Files (x86)/Google/Chrome/chromedriver        
 
 search_term = str(input("Search term: "))
-driver = webdriver.Chrome("C:/Program Files (x86)/Google/Chrome/chromedriver")
+driver = webdriver.Chrome("selenium/webdriver/chrome")
 search_for(search_term)
 
 
