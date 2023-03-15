@@ -118,6 +118,7 @@ chrome_options.add_argument("--headless")
 
 search_term = str(input("Search term: "))
 driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=chrome_options)
+driver.get("https://www.google.co.in")
 search_for(search_term)
 
 
