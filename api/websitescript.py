@@ -1,7 +1,8 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import pymysql
-
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 
 
 
@@ -110,10 +111,13 @@ def search_for(search):
         cursor.connection.commit()
 
 
-#C:/Program Files (x86)/Google/Chrome/chromedriver        
+#C:/Program Files (x86)/Google/Chrome/chromedriver   
+
+chrome_options = Options()
+chrome_options.add_argument("--headless")
 
 search_term = str(input("Search term: "))
-driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=chrome_options)
 search_for(search_term)
 
 
