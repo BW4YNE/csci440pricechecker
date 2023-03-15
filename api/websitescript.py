@@ -113,8 +113,8 @@ def search_for(search):
 
 #C:/Program Files (x86)/Google/Chrome/chromedriver   
 
-chrome_options = Options()
-chrome_options.add_argument("--headless")
+#chrome_options = Options()
+#chrome_options.add_argument("--headless")
 
 search_term = str(input("Search term: "))
 #driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=chrome_options)
