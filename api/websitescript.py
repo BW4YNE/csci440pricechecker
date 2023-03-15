@@ -113,7 +113,7 @@ def search_for(search):
 #C:/Program Files (x86)/Google/Chrome/chromedriver        
 
 search_term = str(input("Search term: "))
-driver = webdriver.Chrome("selenium/webdriver/chrome")
+driver = webdriver.Chrome(ChromeDriverManager().install())
 search_for(search_term)
 
 
