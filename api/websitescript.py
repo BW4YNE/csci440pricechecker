@@ -120,7 +120,7 @@ search_term = str(input("Search term: "))
 
 #driver = webdriver.Chrome(C:/Program Files (x86)/Google/Chrome/chromedriver) <--This was the original code when ran locally. Might have to downlaod bs4 and selenium for this to work
 
-driver = webdriver.Chrome(selenium/webdriver/chrome) #<--- This directory path is what is giving me issues when trying to implement this online-
+driver = webdriver.Chrome(selenium/webdriver/chrome/chromedriver) #<--- This directory path is what is giving me issues when trying to implement this online-
 #- here. Since this path is for local use, I can't figure out how to route...
 
 #driver.get("https://www.google.co.in")
