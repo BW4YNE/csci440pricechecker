@@ -117,7 +117,9 @@ def search_for(search):
 #chrome_options.add_argument("--headless")
 
 search_term = str(input("Search term: "))
-#driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=chrome_options)
+driver = webdriver.Chrome(C:/Program Files (x86)/Google/Chrome/chromedriver) #<--- This directory path is what is giving me issues when trying to implement this online-
+#- here. Since this path is for local use, I can't figure out how to route...
+
 #driver.get("https://www.google.co.in")
 search_for(search_term)
 
